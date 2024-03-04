@@ -1,8 +1,7 @@
 #!/bin/bash
 
 ## Creating Splunk User and Group - Sometimes this can break the script, so manually input the below commands before running the script.
-## sudo useradd splunk
-## sudo groupadd splunk
+## Enter Commands Here
 
 ## Downloading the Splunk Universal Forwarder Software
 cd /tmp &&
@@ -25,7 +24,7 @@ chown -R splunk:splunk /Applications/splunkforwarder &&
 sleep 40
 
 #Configure the Splunk universal forwarder - Create deploymentclient.conf
-touch /opt/splunkforwarder/etc/system/local/deploymentclient.conf &&
+touch /Applications/splunkforwarder/etc/system/local/deploymentclient.conf &&
 
 #Echo the configurations into deploymentclient.conf
 echo "[target-broker:deploymentServer]" >> /Applications/splunkforwarder/etc/system/local/deploymentclient.conf &&

@@ -20,12 +20,12 @@ sudo dscl . create /Groups/splunk GroupMembership admin
 #!/bin/bash
 
 
-## Downloading the Splunk Universal Forwarder Software
+#Downloading the Splunk Universal Forwarder Software
 cd /tmp &&
 curl -o /tmp/splunkforwarder-9.2.0.1-darwin-64.tgz "https://download.splunk.com/products/universalforwarder/releases/9.2.0.1/osx/splunkforwarder-9.2.0.1-d8ae995bf219-darwin-64.tgz" &&
 sleep 30
 
-## Assign Splunk permissions - Note your filename in the curl command
+#Assign Splunk permissions - Note your filename in the curl command
 chown -R splunk:splunk /tmp/splunkforwarder-9.2.0.1-darwin-64.tgz &&
 mkdir /Applications/splunkforwarder &&
 

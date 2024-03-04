@@ -12,6 +12,9 @@ sudo dscl . -create /Users/splunk UserShell /bin/bash"
 ````
 sudo dscl . -create /Users/username RealName “Splunk ServiceAccount"
 ````
+
+<br />
+
 The number after “UniqueID” must be an ID number that is not assigned to another user
 ````
 sudo dscl . -create /Users/splunk UniqueID 1001
@@ -47,6 +50,9 @@ sudo dscl . create /Groups/servsupport RealName "Splunk ServiceAccount"
 ````
 sudo dscl . create /Groups/splunk passwd "*"
 ````
+
+<br />
+
 For the next command use an unused groupID number as gid, you can list them out via the below command:
 ````
 dscl . list /Groups PrimaryGroupID | tr -s ' ' | sort -n -t ' ' -k2,2

@@ -18,7 +18,6 @@
 ## sudo dscl . create /Groups/splunk GroupMembership admin
 
 
-#!/bin/bash
 
 ## Downloading the Splunk Universal Forwarder Software
 cd /tmp &&

@@ -12,7 +12,8 @@ sudo dscl . -create /Users/splunk UserShell /bin/bash"
 ````
 sudo dscl . -create /Users/username RealName “Splunk ServiceAccount"
 ````
-````The number after “UniqueID” must be an ID number that is not assigned to another user
+The number after “UniqueID” must be an ID number that is not assigned to another user
+````
 sudo dscl . -create /Users/splunk UniqueID 1001
 ````
 ## sudo dscl . -create /Users/username PrimaryGroupID 1000

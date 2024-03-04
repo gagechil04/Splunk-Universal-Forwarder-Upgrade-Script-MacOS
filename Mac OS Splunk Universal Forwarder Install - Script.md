@@ -34,7 +34,7 @@ echo "targetUri = <DS IP ADDRESS>:8089" >> /Applications/splunkforwarder/etc/sys
 sleep 30
 
 #Enable boot start
-/Applications/splunkforwarder/bin/splunk enable boot-start &&
+/Applications/splunkforwarder/bin/splunk enable boot-start -user splunk &&
 sleep 10
 
 #Start Splunk

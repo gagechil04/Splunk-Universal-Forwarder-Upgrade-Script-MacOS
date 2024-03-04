@@ -38,7 +38,14 @@ sudo dscl . create /Groups/servsupport RealName "Splunk ServiceAccount"
 ````
 sudo dscl . create /Groups/splunk passwd "*"
 ````
-## For the next command use an unused groupID number as gid, you can list them out via the below command:
-  ## dscl . list /Groups PrimaryGroupID | tr -s ' ' | sort -n -t ' ' -k2,2
-    ## sudo dscl . create /Groups/splunk gid 799
-## sudo dscl . create /Groups/splunk GroupMembership admin
+For the next command use an unused groupID number as gid, you can list them out via the below command:
+````
+dscl . list /Groups PrimaryGroupID | tr -s ' ' | sort -n -t ' ' -k2,2
+````
+
+````
+sudo dscl . create /Groups/splunk gid 799
+````
+````
+sudo dscl . create /Groups/splunk GroupMembership admin
+````

@@ -7,10 +7,14 @@
 sudo dscl . -create /Users/splunk
 ````
 ````
-## "sudo dscl . -create /Users/splunk UserShell /bin/bash"
+sudo dscl . -create /Users/splunk UserShell /bin/bash"
 ````
-## sudo dscl . -create /Users/username RealName “Splunk ServiceAccount"
-## Type “sudo dscl . -create /Users/splunk UniqueID 1001” and press “Enter.” The number after “UniqueID” must be an ID number that is not assigned to another user.
+````
+sudo dscl . -create /Users/username RealName “Splunk ServiceAccount"
+````
+````The number after “UniqueID” must be an ID number that is not assigned to another user
+sudo dscl . -create /Users/splunk UniqueID 1001
+````
 ## sudo dscl . -create /Users/username PrimaryGroupID 1000
 ## "sudo dscl . -create /Users/username NFSHomeDirectory /Local/Users/username"
 ## "sudo dscl . -passwd /Users/username password" Replace “password” with the desired password that the new user will use when logging in to the computer.

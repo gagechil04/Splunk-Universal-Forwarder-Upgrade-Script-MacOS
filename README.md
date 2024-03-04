@@ -2,7 +2,7 @@
 
 *Script Note* - Using && after each command in the script ensures that the subsequent command will only run if the previous one succeeded (i.e., returned exit status 0). However, it's not strictly necessary, especially if you want the script to continue executing regardless of the success or failure of the previous command. If you remove && after each command, the script will execute each command sequentially, regardless of the success or failure of the preceding command.
 
-### Creating Splunk User and Group - Sometimes this can break the script, so manually input the below commands before running the script.<br />
+### Creating Splunk User and Group - Sometimes this can break the script, so manually input the below commands before running the script.<br /><br />
 ````
 sudo dscl . -create /Users/splunk
 ````

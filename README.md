@@ -25,10 +25,19 @@ sudo dscl . -create /Users/username NFSHomeDirectory /Local/Users/username"
 ````
 sudo dscl . -passwd /Users/username password" Replace “password” with the desired password that the new user will use when logging in to the computer.
 ````
-## Type “sudo dscl . -append /Groups/admin GroupMembership splunk” and press “Enter” to give the new user administrative privileges. To make the new account a limited user account, skip this step.
-## sudo dscl . create /Groups/splunk
-## sudo dscl . create /Groups/servsupport RealName "Splunk ServiceAccount"
-## sudo dscl . create /Groups/splunk passwd "*"
+To give the new user administrative privileges. To make the new account a limited user account, skip this step.
+````
+sudo dscl . -append /Groups/admin GroupMembership splunk
+````
+````
+sudo dscl . create /Groups/splunk
+````
+````
+sudo dscl . create /Groups/servsupport RealName "Splunk ServiceAccount"
+````
+````
+sudo dscl . create /Groups/splunk passwd "*"
+````
 ## For the next command use an unused groupID number as gid, you can list them out via the below command:
   ## dscl . list /Groups PrimaryGroupID | tr -s ' ' | sort -n -t ' ' -k2,2
     ## sudo dscl . create /Groups/splunk gid 799

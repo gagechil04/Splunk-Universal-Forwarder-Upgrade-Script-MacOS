@@ -29,6 +29,7 @@ To give the new user administrative privileges. To make the new account a limite
 ````
 sudo dscl . -append /Groups/admin GroupMembership splunk
 ````
+<br />
 ````
 sudo dscl . create /Groups/splunk
 ````

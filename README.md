@@ -49,6 +49,9 @@ For the next command use an unused groupID number as gid, you can list them out 
 dscl . list /Groups PrimaryGroupID | tr -s ' ' | sort -n -t ' ' -k2,2
 ````
 
+<br />
+
+
 ````
 sudo dscl . create /Groups/splunk gid 799
 ````

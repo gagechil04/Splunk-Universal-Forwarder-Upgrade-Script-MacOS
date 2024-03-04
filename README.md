@@ -16,9 +16,15 @@ The number after “UniqueID” must be an ID number that is not assigned to ano
 ````
 sudo dscl . -create /Users/splunk UniqueID 1001
 ````
-## sudo dscl . -create /Users/username PrimaryGroupID 1000
-## "sudo dscl . -create /Users/username NFSHomeDirectory /Local/Users/username"
-## "sudo dscl . -passwd /Users/username password" Replace “password” with the desired password that the new user will use when logging in to the computer.
+````
+sudo dscl . -create /Users/username PrimaryGroupID 1000
+````
+````
+sudo dscl . -create /Users/username NFSHomeDirectory /Local/Users/username"
+````
+````
+sudo dscl . -passwd /Users/username password" Replace “password” with the desired password that the new user will use when logging in to the computer.
+````
 ## Type “sudo dscl . -append /Groups/admin GroupMembership splunk” and press “Enter” to give the new user administrative privileges. To make the new account a limited user account, skip this step.
 ## sudo dscl . create /Groups/splunk
 ## sudo dscl . create /Groups/servsupport RealName "Splunk ServiceAccount"

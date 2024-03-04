@@ -1,7 +1,15 @@
 #!/bin/bash
 
 ## Creating Splunk User and Group - Sometimes this can break the script, so manually input the below commands before running the script.
-## Enter Commands Here
+## "sudo dscl . -create /Users/splunk"
+## "sudo dscl . -create /Users/splunk UserShell /bin/bash"
+## sudo dscl . -create /Users/username RealName “Splunk ServiceAccount"
+## Type “sudo dscl . -create /Users/splunk UniqueID 1001” and press “Enter.” The number after “UniqueID” must be an ID number that is not assigned to another user.
+## sudo dscl . -create /Users/username PrimaryGroupID 1000
+## "sudo dscl . -create /Users/username NFSHomeDirectory /Local/Users/username"
+## "sudo dscl . -passwd /Users/username password" Replace “password” with the desired password that the new user will use when logging in to the computer.
+## Type “sudo dscl . -append /Groups/admin GroupMembership splunk” and press “Enter” to give the new user administrative privileges. To make the new account a limited user account, skip this step.
+## sudo dscl . create /Groups/splunk
 
 ## Downloading the Splunk Universal Forwarder Software
 cd /tmp &&

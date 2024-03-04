@@ -16,6 +16,9 @@ The number after “UniqueID” must be an ID number that is not assigned to ano
 ````
 sudo dscl . -create /Users/splunk UniqueID 1001
 ````
+
+<br />
+
 ````
 sudo dscl . -create /Users/username PrimaryGroupID 1000
 ````

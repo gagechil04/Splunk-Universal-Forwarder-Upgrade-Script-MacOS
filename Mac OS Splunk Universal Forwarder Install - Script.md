@@ -36,7 +36,7 @@ sleep 25
 chown -R splunk:splunk /Applications/splunkforwarder &&
 
 #Install Splunk
-/Applications/splunkforwarder/bin/splunk start --accept-license --answer-yes --no-promt --SPLUNKUSERNAME=splunk --gen-and-print-passwd &&
+/Applications/splunkforwarder/bin/splunk start --accept-license --answer-yes --no-prompt --SPLUNKUSERNAME=splunk --gen-and-print-passwd &&
 sleep 40
 
 #Configure the Splunk universal forwarder - Create deploymentclient.conf

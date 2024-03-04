@@ -28,7 +28,7 @@ sudo dscl . -create /Users/username NFSHomeDirectory /Local/Users/username"
 ````
 sudo dscl . -passwd /Users/username password" Replace “password” with the desired password that the new user will use when logging in to the computer.
 ````
-To give the new user administrative privileges. To make the new account a limited user account, skip this step.
+You can give the new 'splunk' user administrative privileges with the command below (Required for Splunk UF).
 ````
 sudo dscl . -append /Groups/admin GroupMembership splunk
 ````

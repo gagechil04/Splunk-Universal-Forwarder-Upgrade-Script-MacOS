@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Be sure to create the splunk user/group before running the script as sudo, see the README first.
+
 #Downloading the Splunk Universal Forwarder Software
 cd /tmp &&
 curl -o /tmp/splunkforwarder-9.2.0.1-darwin-64.tgz "https://download.splunk.com/products/universalforwarder/releases/9.2.0.1/osx/splunkforwarder-9.2.0.1-d8ae995bf219-darwin-64.tgz" &&

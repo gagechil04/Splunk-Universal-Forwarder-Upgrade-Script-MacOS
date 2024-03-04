@@ -24,12 +24,12 @@ cd /tmp &&
 curl -o /tmp/splunkforwarder-9.2.0.1-darwin-64.tgz "https://download.splunk.com/products/universalforwarder/releases/9.2.0.1/osx/splunkforwarder-9.2.0.1-d8ae995bf219-darwin-64.tgz" &&
 sleep 30
 
-## Assign Splunk permissions
-chown -R splunk:splunk /tmp/splunkforwarder-9.2.0.1-d8ae995bf219-darwin-64.tgz &&
+## Assign Splunk permissions - Note your filename in the curl command
+chown -R splunk:splunk /tmp/splunkforwarder-9.2.0.1-darwin-64.tgz &&
 mkdir /Applications/splunkforwarder &&
 
 #Extracting splunk
-sudo tar -zxvf /tmp/splunkforwarder-9.2.0.1-d8ae995bf219-darwin-64.tgz -C /Applications/ &&
+sudo tar -zxvf /tmp/splunkforwarder-9.2.0.1-darwin-64.tgz -C /Applications/ &&
 sleep 25
 
 #Assign Splunk permissions

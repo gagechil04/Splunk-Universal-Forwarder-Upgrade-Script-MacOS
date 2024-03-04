@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ## Note - Using && after each command ensures that the subsequent command will only run if the previous one succeeded (i.e., returned exit status 0). However, it's not strictly necessary, especially if you want the script to continue executing regardless of the success or failure of the previous command. If you remove && after each command, the script will execute each command sequentially, regardless of the success or failure of the preceding command. Here's the script without &&:
 
 ## Creating Splunk User and Group - Sometimes this can break the script, so manually input the below commands before running the script.
@@ -18,6 +16,10 @@
 ## dscl . list /Groups PrimaryGroupID | tr -s ' ' | sort -n -t ' ' -k2,2
 ## sudo dscl . create /Groups/splunk gid 799
 ## sudo dscl . create /Groups/splunk GroupMembership admin
+
+##############################################################################################################################################################################
+
+#!/bin/bash
 
 ## Downloading the Splunk Universal Forwarder Software
 cd /tmp &&

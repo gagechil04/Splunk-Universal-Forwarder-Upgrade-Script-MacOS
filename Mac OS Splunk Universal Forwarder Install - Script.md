@@ -21,7 +21,7 @@
 
 ## Downloading the Splunk Universal Forwarder Software
 cd /tmp &&
-curl -o /Path/you/want/downloaded/to/splunkforwarder-9.2.0.1-darwin-64.tgz "https://download.splunk.com/products/universalforwarder/releases/9.2.0.1/osx/splunkforwarder-9.2.0.1-d8ae995bf219-darwin-64.tgz" &&
+curl -o /tmp/splunkforwarder-9.2.0.1-darwin-64.tgz "https://download.splunk.com/products/universalforwarder/releases/9.2.0.1/osx/splunkforwarder-9.2.0.1-d8ae995bf219-darwin-64.tgz" &&
 sleep 30
 
 ## Assign Splunk permissions

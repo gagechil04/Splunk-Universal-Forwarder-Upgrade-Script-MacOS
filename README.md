@@ -1,4 +1,4 @@
-# Splunk-Universal-Forwarder-Install-Script-MacOS
+# Splunk Universal Forwarder Install Script MacOS
 
 *Script Note* - Using && after each command in the script ensures that the subsequent command will only run if the previous one succeeded (i.e., returned exit status 0).
 
